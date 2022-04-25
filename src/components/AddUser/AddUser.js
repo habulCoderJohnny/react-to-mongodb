@@ -19,7 +19,7 @@ const AddUser = () => {
         .then(res=>res.json())
         .then(data=>{
             console.log('success', data);
-            alert('user saved database')
+            alert('user added: database')
             event.target.reset();
         })
     }

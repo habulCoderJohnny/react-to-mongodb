@@ -31,12 +31,12 @@ const Home = () => {
 
     return (
         <div>
-            <h2>Available user: {users.length}</h2>
+            <h2><u>Available user: {users.length}</u></h2>
             <ul>
                 {
-                    users.map(user=><li key={user.id}>{user.name} <p>{user.email}</p> 
+                    users.map(user=><li key={user.id}>Name: {user.name} <br/> Email: {user.email} <br />
                     <Link to={`/user/update/${user._id}`}><button>Update profile</button></Link>
-                    <button onClick={() =>handleUserRemover(user._id)}>X</button>
+                    <button onClick={() =>handleUserRemover(user._id)}>Remove X</button>
                     </li>)
                 }
             </ul>
