@@ -1,7 +1,20 @@
 .App {
   text-align: center;
+  color: rgb(119, 0, 255);
+  font-size:4vh;
+  font-style: italic;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
-
+ul{
+  list-style-type:square;
+  list-style-position: inside;
+}
+ul>li{
+  margin-bottom: 20px;
+}
+input{
+  font-size: 3vh;
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
